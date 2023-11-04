@@ -1,0 +1,23 @@
+git --version
+git status - no repository .git
+git init
+git status - on branch master
+git add filename - single file
+git add . All files
+git commit -m "message"
+git log
+git diff - tell us the changes between code
+git rm --cached filename - to remove file from commit Area
+git clone - to get the code|copy any repository
+git branch -M "branchName" - change local master to main branch
+git remote add origin "repository_address"
+git remote -v
+git push -u origin main 
+git checkout -b "branchName" - Older Command for creating and changing from current to new Branch 
+			     - -b flag is used to create new branch and branchName is for switching		
+
+git branch - list of branches available, * indicate the current branch
+git switch -c "branchName"
+git branch --all  - to display local branches as well as remote braanch
+git branch -d "branchName" 
+git merge "branchName" - First you should be in main branch
