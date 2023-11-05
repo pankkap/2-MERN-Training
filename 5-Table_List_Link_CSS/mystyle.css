@@ -1,15 +1,24 @@
-h2
+#head1
 {
    color:red;  
    background-color: #ffffff;
 }
-p
+#newheading
 {
-   color: blue;
+   color:green;  
+   background-color: skyblue;
+}
+.para
+{
+   color: green;
    background-color: yellow;
 }
 body
 {
    background-color: pink;
    color: white;
+}
+#para1
+{
+   color: red;
 }
