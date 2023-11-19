@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Registration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        .div-group
+        {
+            margin: 10px;
+            /* border: 2px solid green;
+            padding: 20px; */
+        }
+        .text-border
+        {
+            border: 2px solid red;
+        }
+        textarea{
+            border:none;
+            border-bottom: 2px dashed green;
+            outline: none;
+        }
+        input[type='submit']
+        {
+            background-color: orange;
+            width: 200px;
+            height: 50px;
+            outline: none;
+            border: none;
+            border-radius:10px;
+        }
+        input[type='submit']:hover
+        {
+            background-color: red;
+            color: yellow;
+        }
+        input[type='text']:valid
+        {
+            background-color: lightgreen;
+        }
+        form
+        {
+            width: 300px;
+            border: 2px solid red;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: aqua;
+        }
+        .fa
+        {
+            font-size: 40px;
+        }
+        .fa-facebook-official
+        {
+            color: blue;
+        }
+        .fa-twitter
+        {
+            color: rgb(255, 0, 221);
+        }
+        .my-key
+        {
+            color: chartreuse;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Student Registration</h1>
+
+    <form action="welcome.html" method="post">
+        <div id="social-icnos">
+            <a href="https://beta-labs.in"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <span class="material-symbols-outlined my-key">
+                key
+                </span>
+        </div>
+        <div class="div-group">
+        <label for="">Student Name: </label>
+        <input type="text" name="StudentName" required class="text-border">
+    </div>    
+        <div class="div-group">
+        <label for="">Student Password: </label>
+        <input type="password" name="password" required class="text-border">
+    </div>
+    <div class="div-group">
+        <label for="">Address: </label>
+        <textarea cols="30" rows="10" name="address" required></textarea>
+    </div>
+
+    <div class="div-group">
+        <label for="">Sex:</label>
+        <input type="radio" name="sex" value="male">Male
+        <input type="radio" name="sex" checked value="female">Female
+    </div>
+
+    <div class="div-group">
+        <label for="">Hobbies:</label>
+        <input type="checkbox" name="hobbies" value="Cricket">Cricket
+        <input type="checkbox" name="hobbies" checked value="dancing">Dancing
+        <input type="checkbox" name="hobbies" value="singling">Singing
+        <input type="checkbox" name="hobbies" value="Gardening">Gardening
+        <input type="checkbox" name="hobbies" checked value="coding">Coding
+    </div>
+
+    <div class="div-group">
+        <label for="">Mobile: </label>
+        <input type="number" name="mobile" class="text-border">
+    </div>
+
+    <div class="div-group">
+        <label for="">DOB: </label>
+        <input type="date" name="dob" required>
+    </div>
+
+    <div class="div-group">
+        <label for="">Fav Color: </label>
+        <select name="fav-color">
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="blue">blue</option>
+            <option value="pink">Pink</option>
+            <option value="green">Green</option>
+            <option value="black">Black</option>
+            <option value="White">White</option>
+        </select>
+    </div>
+    <div class="div-group">
+        <input type="submit" value="Create Student Account">
+        <input type="reset" value="Clear Data">
+    </div>
+    </form>
+</body>
+</html>
