@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Box Demo</title>
+    <style>
+        *{padding: 0;margin: 0; box-sizing: border-box;}
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 2px solid;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #box1 {
+        background-color: skyblue;
+      }
+      #box2 {
+        background-color: orange;
+      }
+      #box3 {
+        background-color: pink;
+       
+      }
+      .parent
+      {
+        height: 100vh;
+        border: 2px solid blue;
+        display: flex;
+        flex-wrap: wrap;
+        /* Making Text center not the element */
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-evenly; 
+        /* Horizontal position with 100% width */
+        /* Arrange element vertically with fixed height */
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box" id="box1"><h1>Box-1</h1></div>
+      <div class="box" id="box2"><h1>Box-2</h1></div>
+      <div class="box" id="box3"><h1>Box-3</h1></div>
+    </div>
+  </body>
+</html>

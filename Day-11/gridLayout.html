@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        *{padding: 0;margin: 0;box-sizing: border-box;}
+        body
+        {
+            height: 100vh;
+            border: 5px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;    
+
+        }
+        .container
+        {
+            width: 1200px;
+            background-color: rgb(214, 228, 234);
+            display: grid;
+            grid-template-columns: 1fr 2fr 3fr;
+            /* grid-template-columns:repeat(3, 1fr); */
+            grid-template-rows: repeat(3, 200px);
+            /* grid-template-rows: repeat(3, 1fr); */
+            /* grid-column-gap: 20px;
+            grid-row-gap: 20px; */
+            grid-gap: 10px;
+
+            /* extra content in rows */
+            grid-auto-rows: 200px;
+        }
+        #item-1
+        {
+            background-color: rgb(160, 127, 95);
+            /* grid-column-start: 3;
+            grid-column-end: 4; */
+            grid-column: 3/4;
+        }
+        #item-2
+        {
+            background-color: rgb(135, 95, 160);
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        #item-3
+        {
+            background-color: rgb(95, 160, 111);
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        #item-4
+        {
+            background-color: rgb(228, 223, 180);
+        }
+        #item-5
+        {
+            background-color: rgb(81, 94, 95);
+            grid-row: 2/3;
+            /* grid-column: 1/3; */
+            grid-column: 1/span 2;
+        }
+        #item-6
+        {
+            background-color: cadetblue;
+            /* grid-column: 1/span 3; */
+            /* grid-column: 1/4; */
+            grid-column: 1/-1;
+        }
+        #item-7
+        {
+            background-color: rgb(199, 236, 189);
+        }
+        #item-8
+        {
+            background-color: rgb(32, 62, 63);
+        }
+        #item-9
+        {
+            background-color: blanchedalmond;
+        }
+        .item
+        {
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            display: grid;
+            place-items: center;
+            font-size: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <!-- div.item#item-$*9 -->
+       <!-- item-, press ctrl+d multiple times and then slect shift to catter -1,-2,-3 -->
+       <div class="item" id="item-1"> item-1</div>
+       <div class="item" id="item-2"> item-2</div>
+       <div class="item" id="item-3"> item-3</div>
+       <div class="item" id="item-4"> item-4</div>
+       <div class="item" id="item-5"> item-5</div>
+       <div class="item" id="item-6"> item-6</div>
+       <div class="item" id="item-7"> item-7</div>
+       <div class="item" id="item-8"> item-8</div>
+       <div class="item" id="item-9"> item-9</div>
+    </div>
+</body>
+</html>

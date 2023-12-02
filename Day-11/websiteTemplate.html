@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        section {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        article {
+            background-color: lightyellow;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        aside {
+            flex: 0 0 300px;
+            margin: 10px;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        footer {
+            background-color: lightblue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Media Query Trigger Point */
+       @media screen and (min-width:768px) and (max-width:1024px)
+       {
+        main{
+            flex-direction: column;
+
+        }
+        section
+        {
+            display: flex;
+            flex-direction: row;
+        }
+        section article
+        {
+            width: 50%;
+            height: 300px;
+        }
+
+        aside
+        {
+            flex-basis: 100%;
+        }
+       }
+       @media screen and (max-width:767px)
+       {
+        article
+        {
+            background-color: pink;
+        }
+        aside
+        {
+            flex-basis: 94%;
+        }
+    }
+        @media screen and (max-width:420px)
+        {
+            aside
+        {
+         height: 300px;
+         background-color: yellow;
+        }       
+       }
+    </style>
+    <title>Responsive Layout with Media Queries</title>
+</head>
+<body>
+    <!-- HTML comes with Sematic Tags -->
+    
+    <!-- div is non semmatic tags -->
+    <!-- <div></div>
+    <div></div> -->
+
+    <header>
+        <h1>Website Header</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Article 1</h2>
+                <p>Content goes here...</p>
+            </article>
+            <article>
+                <h2>Article 2</h2>
+                <p>Content goes here...</p>
+            </article>
+        </section>
+        <aside>
+            <h2>Aside</h2>
+            <p>Additional content goes here...</p>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Website</p>
+    </footer>
+</body>
+</html>
