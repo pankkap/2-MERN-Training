@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Basics</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <style>
+      .container-fluid {
+        border: 2px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row border border-3 border-danger">
+        <div class="col-lg-3 col-md-4 col-sm-6 feature">
+          <h2>Feature 1</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 feature">
+          <h2>Feature 2</h2>
+          <p>
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 feature">
+          <h2>Feature 3</h2>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 feature">
+          <h2>Feature 4</h2>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+      </div>
+      <div class="row border border-5 border-dark bg-light mt-2 p-5">
+        <div class="col-lg-3 col-md-4 col-sm-6 feature">
+          <h2>Feature 5</h2>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 feature">
+          <h2>Feature 6</h2>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+      </div>
+      <br />
+      <div id="liveAlertPlaceholder" class="alert alert-dark alert-link" role="alert"></div>
+      <button type="button" class="btn btn-primary" id="liveAlertBtn">
+        Show live alert
+      </button>
+    </div>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/snippets.js"></script>
+  </body>
+</html>
