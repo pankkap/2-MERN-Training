@@ -13,3 +13,5 @@ console.log( myFunction(10,5))
 (function(){
 console.log("this is self invoking function")
 })();
+
+//arrow function
