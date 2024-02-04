@@ -1,0 +1,97 @@
+ /* ------------Initial Phase CSS--------------- */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: linear-gradient(120deg, skyblue, blue);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+  }
+  header,
+  form {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header {
+    font-size: 40px;
+  }
+  
+  form input,
+  form button {
+    padding: 10px;
+    border: none;
+    font-size: 24px;
+    background: white;
+    outline: none;
+  }
+  form button {
+    color: blue;
+    background-color: white;
+    cursor: pointer;
+    border: 2px solid white;
+  }
+  form button:hover {
+    color: white;
+    background-color: skyblue;
+  }
+  .todo
+  {
+    border: 1px solid white;
+    width: 200px;
+    height: 50px;
+  }
+ .todo-container
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .todo-list
+ {
+   min-width: 25%;
+  list-style: none;
+  
+ }
+ .todo
+ {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+  margin: 8px;
+ }
+ .todo li
+ {
+  flex: 1;
+ }
+ .cmplt-btn, .delete-btn
+ {
+  border: none;
+  font-size: 16px;
+  outline: none;
+  color: white;
+  background-color: seagreen;
+  padding: 16px;
+  cursor: pointer;
+ }
+ .delete-btn
+ {
+  background-color: red;
+ }
+.fa-check, .fa-trash
+{
+  pointer-events: none;
+}
+.completed
+{
+  text-decoration: line-through;
+  opacity: 0.5;
+}
