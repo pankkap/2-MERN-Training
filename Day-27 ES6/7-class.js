@@ -1,0 +1,1 @@
+// ES5 there is no concept of class and Objects
