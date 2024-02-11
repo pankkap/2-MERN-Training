@@ -1,6 +1,5 @@
 // What is this ? This is used to point to current Object
-//class in ES6
-class ABC{}
+//class in ES6 
 class Person{
     // properties| data Member
    #name;
@@ -16,7 +15,7 @@ class Person{
     }
 }
 
-class Employee extends Person, ABC
+class Employee extends Person
 {
     constructor(name, age, salary)
     {
