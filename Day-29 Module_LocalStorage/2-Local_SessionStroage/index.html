@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage | Session Storage</title>
+</head>
+<body>
+    <h1>Local Stoage | Session Stroage </h1>
+    <input type="text" placeholder="Enter your Email"> <br><br>
+    <input type="password" placeholder="Enter your Password"><br><br>
+    <button>Store Data</button>
+    <a href="./diplayPage.html">go to diplay page</a>
+    <script>
+        //reference
+        let input1 = document.querySelectorAll('input')[0]
+        let input2 = document.querySelectorAll('input')[1]
+        let btn = document.querySelector('button')
+        
+        btn.onclick = ()=>{
+            let data ={
+                email:input1.value,
+                pwd:input2.value
+            }
+            
+            // console.log(data)
+            // Store data in Local Storage
+            // object data frist convert into string and then store into storage
+            let update_data =JSON.stringify(data)
+            sessionStorage.setItem("name", update_data)
+
+        }
+    </script>
+</body>
+</html>

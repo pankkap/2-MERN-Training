@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Browser Storage </title>
+</head>
+<body>
+    <p></p>
+
+    <script>
+        let name = sessionStorage.getItem("name")
+        let update_data = JSON.parse(name)
+        document.querySelector('p').innerHTML =  " " +update_data.email + " " + update_data.pwd;
+    </script>
+</body>
+</html>
