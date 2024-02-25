@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location</title>
+  </head>
+  <body>
+    <p></p>
+    <button onclick="getMyLocation()">Get My Location</button>
+
+    <script>
+    //   function getMyLocation() {
+    //     function showPosition(position) {
+    //       let myLatitude = position.coords.latitude;
+    //       let myLongitude = position.coords.longitude;
+
+    //       document.getElementsByTagName('p')[0].innerHTML = `Latitude: ${myLatitude} Longitude: ${myLongitude}`;
+    //     }
+    //     function showError() {
+    //         console.log("Unable to retrive location")
+    //     }
+
+    //     navigator.geolocation.getCurrentPosition(showPosition, showError);
+    //   }
+
+        fetch('https://ipapi.co/json')
+        .then(res=>res.json())
+        .then(data=>{
+          document.querySelector('p').innerHTML = `Pincode:${data.pincode}`  
+          console.log(data)
+        })
+
+    </script>
+    <script src="getIp.js"></script>
+  </body>
+</html>
